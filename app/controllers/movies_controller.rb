@@ -11,7 +11,7 @@ class MoviesController < ApplicationController
   end
 
   def index
-    sort_name=Movie.order(:title)
+    @sort_name=Movie.order(:title)
   end
 
   def new
