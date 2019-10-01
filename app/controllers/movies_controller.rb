@@ -19,6 +19,14 @@ class MoviesController < ApplicationController
     end
   end
 
+  def sort_name
+    @movies = Movie.order(:title)
+  end
+  
+  def sort_date
+    @movies = Movie.order(:release_date)
+  end
+  
   def new
     # default: render 'new' template
   end
