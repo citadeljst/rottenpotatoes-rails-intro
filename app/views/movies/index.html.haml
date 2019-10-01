@@ -4,10 +4,10 @@
 %table#movies.table.table-striped.col-md-12
   %thead
     %tr
-      %th
+      %th=link_to "Movie Title", controller: "MoviesController", action: "sort_name", id:@sort_name
       %th Movie Title
       %th Rating
-      %th
+      %th=link_to "Release Date", controller: "MoviesController", action: "sort_date", id:@sort_date
       %th Release Date
       %th More Info
   %tbody
